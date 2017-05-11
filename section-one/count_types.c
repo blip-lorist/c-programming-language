@@ -17,8 +17,8 @@ main()
 
     /* until we reach the end of file */ 
     while ((c = getchar()) != EOF)
-        if (c >= '0' && c <= '9')
-            ++digits[c];
+        if (c >= '0'&& c <= '9')
+          ++digits[c-'0'];
         else if (c == ' ' || c == '\n' || c == '\t')
             ++whitespace;
         else 
